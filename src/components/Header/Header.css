@@ -19,6 +19,6 @@
     margin-left: 30px;
 }
 .container a:hover {
-    color: orange;
+    color: #a5d5f8;
     transition: all .5s ease;
 }
