@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "N600 Wireless Router",
+    "price": 1999,
+    "img": "https://cdn.pixabay.com/photo/2020/07/25/09/08/modem-5436146__340.jpg"
+  },
+  {
+    "id": "2",
+    "name": "TP-Link D400 Router",
+    "price": 1699,
+    "img": "https://thumbs.dreamstime.com/b/router-black-shiny-white-background-51253240.jpg"
+  },
+  {
+    "id": "3",
+    "name": "TP-LINK TL-WR940N Wireless N300 Home Router",
+    "price": 2200,
+    "img": "https://m.media-amazon.com/images/I/51KywviQsrL._AC_SY450_.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Tenda V12 AC1200 Dual-Band Gigabit WiFi VDSL2 Modem Router ",
+    "price": 4550,
+    "img": "https://cdn.mwave.com.au/images/400/tenda_v12_ac1200_dualband_gigabit_wifi_vdsl2_modem_router_ac44977.jpg"
+  },
+  {
+    "id": "5",
+    "name": "TD-W8970 | TP-Link Modem router",
+    "price": 1800,
+    "img": "https://www.distrelec.de/Web/WebShopImages/landscape_large/56/fa/tp-link-td-w8970.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Tenda TX9 Pro Dual Band Wi-Fi 6 Router",
+    "price": 7582,
+    "img": "https://media.ldlc.com/r1600/ld/products/00/05/84/83/LD0005848343_1.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Tenda AC23 AC2100 Dual Band Gigabit WiFi Router",
+    "price": 8650,
+    "img": "https://my-test-11.slatic.net/p/fc7dc77bb0b78d006a16bd867472131c.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Xiaomi Mi WIFI Router Mini",
+    "price": 2150,
+    "img": "https://www.shopz.com.bd/wp-content/uploads/2019/03/Xiaomi-Mi-WIFI-Router-Mini-Version-11AC-1167Mbps-2-4G-5G-External-USB-Storage-Smart-APP-3.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Xiaomi Mi Router CR6606",
+    "price": 3800,
+    "img": "https://img.dxcdn.com/productimages/sku_460658_1.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Asus-ROG-Rapture-GT-AX11000-Tri-band",
+    "price": 13080,
+    "img": "https://diamu.com.bd/wp-content/uploads/2021/03/Asus-ROG-Rapture-GT-AX11000-Tri-band-WiFi-Gaming-Router1.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Asus RT-AC86U Wireless Router WiFi AC2900",
+    "price": 11286,
+    "img": "https://www.powerplanetonline.com/cdnassets/asus_rt_ac86u_router_inalambrico_wifi_ac2900_01_l.jpg"
+  },
+  {
+    "id": "12",
+    "name": "ASUS AX5400 WiFi 6 Gaming Router",
+    "price": 24041,
+    "img": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFoT09BUGRhd0wuX0FDX1NMMTUwMF8uanBn.jpg"
+  }
+]
