@@ -3,6 +3,7 @@ import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import './Shop.css';
 import Modal from '../Modal/Modal';
+import Question from '../Question/Question';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -17,7 +18,8 @@ const Shop = () => {
 
     const addToCart = (clickedProduct) => {
         if(carts.length <= 3) {
-            setCarts([...carts, clickedProduct]);
+            const cartItems = [...carts, clickedProduct];
+            setCarts(cartItems);
         }
         else {
             alert('You cannot add more than four');
@@ -30,7 +32,8 @@ const Shop = () => {
         }
         else {
             const random = Math.floor(Math.random() * carts.length);
-            setRandom([carts[random]]); 
+            const randomOne = carts[random]
+            setRandom([randomOne]);
         }  
     };
 
@@ -46,16 +49,21 @@ const Shop = () => {
                 }
             </div>
             <div className='shop-container'>
-                <div className="product-flex">
-                    <div className='products-container'>
-                        {
-                            products.map(product => <Product 
-                                product={product}
-                                key={product.id} 
-                                addToCart={addToCart}                   
-                            ></Product>)
-                        }
-                    </div>      
+                <div>
+                    <div className="product-flex">
+                        <div className='products-container'>
+                            {
+                                products.map(product => <Product 
+                                    product={product}
+                                    key={product.id} 
+                                    addToCart={addToCart}                   
+                                ></Product>)
+                            }
+                        </div>      
+                    </div>
+                    <div>
+                        <Question></Question>
+                    </div>
                 </div>
                 <div className="cart-container">          
                     <h2>Selected Router</h2>
@@ -64,7 +72,7 @@ const Shop = () => {
                             carts.map(item => <Cart key={item.id} cart={item}></Cart>)
                         }
                     </div>
-                    <p style={{color: '#dfab00f8'}}>please Double cilck for get 1</p>
+                    <p style={{color: '#dfab00f8'}}>Double cilck for get 1</p>
                     <button title='if button does not work propperly, Please click double' onClick={chooseRandom}>CHOOSE 1 FOR ME</button><br /><br />
                     <button onClick={resetAll}>RESET ALL</button>
                 </div>

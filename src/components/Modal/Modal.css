@@ -17,7 +17,7 @@
     transform: translate(-50%, -50%);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     position: relative;
-    animation: 2.1s all ease;
+    animation: 1.5s all ease;
     animation-name: drop;
 } 
 
@@ -27,7 +27,7 @@
         top: -100px;
     }
     50% {
-        top: 55%;
+        top: 52%;
     }
     100%{
         top: 50%;
