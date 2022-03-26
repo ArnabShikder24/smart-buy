@@ -24,12 +24,20 @@ const Shop = () => {
         }
     };
      
-    function chooseRandom() {
-        const random = Math.floor(Math.random() * carts.length);
-        const showOne = carts[random];
-
-        setRandom([showOne]);    
+    const chooseRandom = () =>  {
+        if(carts.length === 0) {
+            alert('You do not have any cart')
+        }
+        else {
+            const random = Math.floor(Math.random() * carts.length);
+            setRandom([carts[random]]); 
+        }  
     };
+
+    const resetAll = () => {
+      setCarts([])
+    };
+
     return (
         <div>
             <div className='modal'>
@@ -56,8 +64,9 @@ const Shop = () => {
                             carts.map(item => <Cart key={item.id} cart={item}></Cart>)
                         }
                     </div>
-                    <button onClick={chooseRandom}>CHOOSE 1 FOR ME</button><br /><br />
-                    <button>RESET ALL</button>
+                    <p style={{color: '#dfab00f8'}}>please Double cilck for get 1</p>
+                    <button title='if button does not work propperly, Please click double' onClick={chooseRandom}>CHOOSE 1 FOR ME</button><br /><br />
+                    <button onClick={resetAll}>RESET ALL</button>
                 </div>
             </div>
         </div>
