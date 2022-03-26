@@ -22,3 +22,9 @@
     color: #a5d5f8;
     transition: all .5s ease;
 }
+
+@media only screen and (max-width: 700px) {
+    .container a {
+        display: none;
+    }
+}

@@ -37,3 +37,38 @@
     background-color: #0f578b;
     transition: all .4s ease;
 }
+
+@media only screen and (max-width: 1260px) {
+    .shop-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding-top: 60px;
+    }
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .shop-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 60px;
+    }
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .shop-container {
+        display: block;
+        padding-top: 60px;
+    }
+    .cart-container {
+        display: none;
+        bottom: 0;
+    }
+}
