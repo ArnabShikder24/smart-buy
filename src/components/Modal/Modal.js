@@ -1,11 +1,8 @@
 import React from 'react';
 import './Modal.css'
 
-const Modal = (props) => {
-    const {img, name, price} = props.random;
-    const crose = () => {
-        document.querySelector('.wrap').style.display = "none";
-    };
+const Modal = ({random, crose}) => {
+    const {img, name, price} = random;
 
     return (
         <div className='wrap'>

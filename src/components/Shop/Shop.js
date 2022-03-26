@@ -41,11 +41,16 @@ const Shop = () => {
       setCarts([])
     };
 
+    const crose = () => {
+        document.querySelector('.wrap').style.display = "none";
+        setRandom([])
+    };
+
     return (
         <div>
             <div className='modal'>
                 {
-                    random.map(one => <Modal key={one.id} random={one}></Modal>)
+                    random.map(one => <Modal key={one.id} random={one} crose={crose}></Modal>)
                 }
             </div>
             <div className='shop-container'>
@@ -72,8 +77,7 @@ const Shop = () => {
                             carts.map(item => <Cart key={item.id} cart={item}></Cart>)
                         }
                     </div>
-                    <p style={{color: '#dfab00f8'}}>Double cilck for get 1</p>
-                    <button title='if button does not work propperly, Please click double' onClick={chooseRandom}>CHOOSE 1 FOR ME</button><br /><br />
+                    <button onClick={chooseRandom}>CHOOSE 1 FOR ME</button><br /><br />
                     <button onClick={resetAll}>RESET ALL</button>
                 </div>
             </div>
