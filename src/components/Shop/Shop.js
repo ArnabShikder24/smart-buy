@@ -18,8 +18,14 @@ const Shop = () => {
 
     const addToCart = (clickedProduct) => {
         if(carts.length <= 3) {
-            const cartItems = [...carts, clickedProduct];
-            setCarts(cartItems);
+            const alreadyAdded = carts.find(p => p.id === clickedProduct.id);
+            if(!alreadyAdded) {
+                const cartItems = [...carts, clickedProduct];
+                setCarts(cartItems);  
+            }
+            else {
+                alert('Already exsists! choose another')
+            } 
         }
         else {
             alert('You cannot add more than four');
@@ -36,6 +42,11 @@ const Shop = () => {
             setRandom([randomOne]);
         }  
     };
+
+    const deleteSpecificProduct = product => {
+        const restProduct = carts.filter(cart => cart.id !== product.id);
+        setCarts(restProduct)
+    }
 
     const resetAll = () => {
       setCarts([])
@@ -74,7 +85,11 @@ const Shop = () => {
                     <h2>Selected Router</h2>
                     <div className='cart-item-container'>
                         {
-                            carts.map(item => <Cart key={item.id} cart={item}></Cart>)
+                            carts.map(item => <Cart 
+                                key={item.id} 
+                                cart={item} 
+                                deleteSpecificProduct={deleteSpecificProduct}
+                                ></Cart>)
                         }
                     </div>
                     <button onClick={chooseRandom}>CHOOSE 1 FOR ME</button><br /><br />
